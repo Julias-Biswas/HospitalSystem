@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <!--  For JSP Pages Start  -->
+    <servlet>   
+        <servlet-name>indexpagedemo</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>indexpagedemo</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>admin-login-demo</servlet-name>
+        <jsp-file>/admin-login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin-login-demo</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>doctor-login-demo</servlet-name>
+        <jsp-file>/doctor-login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>doctor-login-demo</servlet-name>
+        <url-pattern>/doctor</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>user-login-demo</servlet-name>
+        <jsp-file>/user-login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-login-demo</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>user-signup-demo</servlet-name>
+        <jsp-file>/signup.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-signup-demo</servlet-name>
+        <url-pattern>/reg</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>admin-signup-demo</servlet-name>
+        <jsp-file>/admin-signup.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin-signup-demo</servlet-name>
+        <url-pattern>/admin-reg</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>admin-profile-demo</servlet-name>
+        <jsp-file>/admin/admin-profile.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin-profile-demo</servlet-name>
+        <url-pattern>/admin/profile</url-pattern>
+    </servlet-mapping>
+    <!--  For JSP Pages Start  -->
+    
+</web-app>
